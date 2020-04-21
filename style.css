@@ -1,21 +1,43 @@
 * {
   margin: 0 auto;
   box-sizing: border-box; 
+  font-family: 'Helvetica';
+}
+body {
+  background-image: url(https://image.freepik.com/free-vector/modern-abstract-pattern-with-geometrical-squares-elements_1302-5276.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: repeat;
+}
+#buttons {
+  display: flex;
+  width: 480px;
+  align-items: center;
+  justify-content: center;
+}
+#clear-button, #color-button, #random-button { 
+  width: 100px;
+  height: 40px;
+  margin: 1rem;
+  border-radius: 20px;
+  border: solid 0.5px rgb(96, 154, 230);
+  padding: 0.5rem;
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  font-size: 12px;
+}
+#clear-button:hover, #color-button:hover, #random-button:hover {
+  background-color: rgb(96, 154, 230, 0.8);
+}
+#clear-button:active, #color-button:active, #random-button:active {
+  background-color: rgba(17, 58, 104, 0.8);
 }
 #container {
   display: grid;
   width: 480px;
   height: 480px;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
-  border: solid 1px #000000;
+  background: rgb(255, 255, 255);
+  border: solid 1px rgb(114, 108, 108);
 }
 .box {
   display: inline-block;
-  border: solid 1px #000000;
-  width: 30px;
-  height: 30px;
-}
-.box:hover {
-  background-color: red;
 }
